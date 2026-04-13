@@ -47,7 +47,7 @@ in bullet points (max 3 points for each questions)
 9.Provide a summary of the analysis in one or two sentences
 10.Provide a list of similar defects that have been observed in the past and their outcomes'''
 
-model=genai.GenerativeModel('gemini-2.5-flash-lite')
+model=genai.GenerativeModel('models/gemini-2.5-flash-lite')
 
 def generate_result(prompt,img):
     result =model.generate_content(f'''Using the given {prompt}
